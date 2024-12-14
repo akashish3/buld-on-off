@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Bulb ON OFF</title>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <img src="bulboff.png" id="myImage" alt="bulb" width="100px" height="180px" >
+        <button onclick="lit(1)">BulbOn</button>
+        <button onclick="lit(0)">BulbOff</button>
+            </div>
+        </div>
+        <script>
+            function lit(swi){
+                var pic;
+                if(swi==0){
+                    pic="bulboff.png";
+                }else{
+                    pic="bulbon.png";
+                }
+                document.getElementById("myImage").src=pic;
+            }
+        </script>
+    </body>
+</html>
